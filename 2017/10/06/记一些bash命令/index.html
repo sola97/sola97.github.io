@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>sola&#39;s Blog</title>
+  <title>记一些bash命令 | sola&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="sola&#39;s Blog">
-<meta property="og:url" content="http://sola.vip/index.html">
+  <meta name="description" content="1.文本合并去重 awk &amp;apos;!a[$0]++&amp;apos; *.txt &amp;gt; all.txt 2.硬盘克隆 dd if=/dev/sda of=/dev/sdb bs=4k 3.硬盘分区 gparted">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记一些bash命令">
+<meta property="og:url" content="http://sola.vip/2017/10/06/记一些bash命令/index.html">
 <meta property="og:site_name" content="sola&#39;s Blog">
-<meta property="og:description" content="个人博客">
+<meta property="og:description" content="1.文本合并去重 awk &amp;apos;!a[$0]++&amp;apos; *.txt &amp;gt; all.txt 2.硬盘克隆 dd if=/dev/sda of=/dev/sdb bs=4k 3.硬盘分区 gparted">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-10-06T14:50:15.032Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="sola&#39;s Blog">
-<meta name="twitter:description" content="个人博客">
+<meta name="twitter:title" content="记一些bash命令">
+<meta name="twitter:description" content="1.文本合并去重 awk &amp;apos;!a[$0]++&amp;apos; *.txt &amp;gt; all.txt 2.硬盘克隆 dd if=/dev/sda of=/dev/sdb bs=4k 3.硬盘分区 gparted">
   
     <link rel="alternate" href="/atom.xml" title="sola&#39;s Blog" type="application/atom+xml">
   
@@ -67,9 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-记一些bash命令" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-记一些bash命令" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/06/记一些bash命令/" class="article-date">
   <time datetime="2017-10-06T14:43:39.000Z" itemprop="datePublished">2017-10-06</time>
@@ -82,8 +81,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/06/记一些bash命令/">记一些bash命令</a>
+    <h1 class="article-title" itemprop="name">
+      记一些bash命令
     </h1>
   
 
@@ -107,51 +106,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-ubuntu14-04-shadowsocks配置" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/06/ubuntu14-04-shadowsocks配置/" class="article-date">
-  <time datetime="2017-10-06T14:01:08.000Z" itemprop="datePublished">2017-10-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/06/ubuntu14-04-shadowsocks配置/">ubuntu14.04 shadowsocks配置</a>
-    </h1>
+    <a href="/2017/10/06/ubuntu14-04-shadowsocks配置/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">ubuntu14.04 shadowsocks配置</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.安装shadowsocks</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo apt-get install python3-pip</div><div class="line">pip3 install shadowsocks</div></pre></td></tr></table></figure>
-<p>2.编辑/etc/shadowsocks.json<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">    &quot;server&quot;:&quot;0.0.0.0&quot;,或服务器IP</div><div class="line">    &quot;server_port&quot;:8388</div><div class="line">    &quot;local_port&quot;:1080,</div><div class="line">    &quot;password&quot;:&quot;my password&quot;,</div><div class="line">    &quot;timeout&quot;:600,</div><div class="line">    &quot;method&quot;:&quot;aes-256-cfb&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>3.运行</p>
-<pre><code>ssserver -c shadowsocks.json -d start
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://sola.vip/2017/10/06/ubuntu14-04-shadowsocks配置/" data-id="cj8g0crl2000182uk00zfj4lu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
